@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "ProjetoFastCash.Controllers.TransacaoController",
+    "Method": "GetTransacoes",
+    "RelativePath": "api/Transacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoFastCash.DTOs.TransacaoListDTO, ProjetoFastCash, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoFastCash.Controllers.TransacaoController",
+    "Method": "Post",
+    "RelativePath": "api/Transacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transacaoCreateRequestDTO",
+        "Type": "ProjetoFastCash.DTOs.TransacaoCreateRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFastCash.Controllers.TransacaoController",
+    "Method": "GetTransacaoByTxId",
+    "RelativePath": "api/Transacao/{txid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "txid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjetoFastCash.DTOs.TransacaoListDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoFastCash.Controllers.TransacaoController",
+    "Method": "UpdateTransacao",
+    "RelativePath": "api/Transacao/{txid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "txid",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "ProjetoFastCash.DTOs.TransacaoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjetoFastCash.DTOs.TransacaoUpdateDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoFastCash.Controllers.TransacaoController",
+    "Method": "Delete",
+    "RelativePath": "api/Transacao/{txid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "txid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
